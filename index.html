@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            green: 'hsl(75, 94%, 57%)',
+            cGray: 'hsl(0, 0%, 20%)',
+            darkGray: 'hsl(0, 0%, 12%)',
+            offBlack: 'hsl(0, 0%, 8%)',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="min-h-screen bg-offBlack">
+
+<div class="flex items-center justify-center h-screen">
+  <div class="bg-darkGray flex flex-col items-center justify-center rounded-xl p-10 text-white">
+    <img class="rounded-full w-20 h-20" src="./assets/images/avatar-jessica.jpeg" alt="">
+
+    <h1 class="text-2xl pt-3">Jessica Randall</h1>
+    <h1 class="text-green text-medium pb-5">London, United Kingdom</h1>
+
+    <p>"Front-end developer and avid reader."</p>
+
+    <div class="pt-5 grid gap-3">
+      <button class="bg-cGray py-2 px-6 rounded-lg">GitHub</button>
+      <button class="bg-cGray py-2 px-6 rounded-lg">Frontend Mentor</button>
+      <button class="bg-cGray py-2 px-6 rounded-lg">LinkedIn</button>
+      <button class="bg-cGray py-2 px-6 rounded-lg">Twitter</button>
+      <button class="bg-cGray py-2 px-6 rounded-lg">Instagram</button>
+    </div>
+  </div>
+</div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
